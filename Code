@@ -1,0 +1,84 @@
+questions = [
+    {
+        "question": "What is the capital of France?",
+        "options": ["A. Berlin", "B. Madrid", "C. Paris", "D. Rome"],
+        "answer": "C"
+    },
+    {
+        "question": "Which language is used for web development?",
+        "options": ["A. Python", "B. HTML", "C. C++", "D. Java"],
+        "answer": "B"
+    },
+    {
+        "question": "What does CPU stand for?",
+        "options": ["A. Central Process Unit", "B. Central Processing Unit", "C. Computer Personal Unit", "D. Central Power Unit"],
+        "answer": "B"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "options": ["A. Earth", "B. Mars", "C. Jupiter", "D. Saturn"],
+        "answer": "B"
+    },
+    {
+        "question": "What is the largest ocean on Earth?",
+        "options": ["A. Atlantic Ocean", "B. Indian Ocean", "C. Arctic Ocean", "D. Pacific Ocean"],
+        "answer": "D"
+
+    },
+    {
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "options": ["A. Charles Dickens", "B. William Shakespeare", "C. Mark Twain", "D. Jane Austen"],
+        "answer": "B"
+    },
+    {
+        "question": "What is the chemical symbol for gold?",
+        "options": ["A. Au", "B. Ag", "C. Pb", "D. Fe"],
+        "answer": "A"
+    },
+    {
+        "question": "Which gas do plants absorb from the atmosphere?",
+        "options": ["A. Oxygen", "B. Nitrogen", "C. Carbon Dioxide", "D. Hydrogen"],
+        "answer": "C"
+    },
+    {
+        "question": "What is the hardest natural substance on Earth?",
+        "options": ["A. Gold", "B. Iron", "C. Diamond", "D. Sapphire"],
+        "answer": "C"
+    },
+    {
+        "question": "Which element has the chemical symbol 'O'?",
+        "options": ["A. Oxygen", "B. Osmium", "C. Gold", "D. Silver"],
+        "answer": "A"
+    },
+    {
+        "question": "What is the main ingredient in guacamole?",
+        "options": ["A. Tomato", "B. Avocado", "C. Onion", "D. Pepper"],
+        "answer": "B"
+    }
+]
+
+def run_quiz(questions):
+    score = 0
+
+    for q in questions:
+        print("\n" + q["question"])
+        for option in q["options"]:
+            print(option)
+
+        answer = input("Your answer (A/B/C/D): ").upper()
+
+        if answer == q["answer"]:
+            print("✅ Correct!")
+            score += 1
+        else:
+            print(f"❌ Wrong! The correct answer was {q['answer']}.")
+
+    print(f"\nYour final score: {score}/{len(questions)}")
+
+def main():
+    print("🧠 Welcome to the Python Quiz Game!")
+    run_quiz(questions)
+
+if __name__ == "__main__":
+
+    main()
