@@ -20,11 +20,15 @@ A simple command-line quiz game built in Python. This game asks multiple-choice 
 
 ### 📦 Run the Game
 
-1. Run the script
+1. Clone this Repositery 
+
+https://github.com/codiantdivyanshu/Quiz-Game-.git
+
+2. Run the script
 
   python quiz_game.py
 
-2. Example Gameplay
+3. Example Gameplay
 
    🧠 Welcome to the Python Quiz Game!
 
