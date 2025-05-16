@@ -50,3 +50,11 @@ Your answer (A/B/C/D): A
 
 Your final score: 1/2
 
+4. Project structure
+
+├── code                   # 🎯 Main Python script
+├── README.md              # 📄 Project overview and instructions
+├── .gitignore             # 🚫 Files/folders to ignore in Git
+└── LICENSE                # 📜 Project license (e.g., MIT)
+
+
